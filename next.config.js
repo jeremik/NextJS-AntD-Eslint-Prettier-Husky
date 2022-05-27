@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
-const withLess = require('next-with-less');
-const modifyVars = require('./customTheme.json');
+const withLess = require("next-with-less");
+const modifyVars = require("./customTheme.json");
 
 const nextConfig = withLess({
   lessLoaderOptions: {
@@ -9,7 +9,11 @@ const nextConfig = withLess({
     },
   },
   eslint: {
-    dirs: ['src'],
+    dirs: ["src"],
+  },
+  sassOptions: {
+    includePaths: ["./src"],
+    prependData: `@import "styles/base/_variables.scss"; @import "styles/base/_mixins.scss";`,
   },
 });
 

@@ -1,0 +1,76 @@
+@import url("//fonts.googleapis.com/css?family=Lato:400,700");
+
+@font-face {
+  font-family: "Brandon_Grotesque";
+  src: url("/assets/fonts/Brandon_Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Brandon_Grotesque";
+  src: url("/assets/fonts/Brandon_Light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Brandon_Grotesque";
+  src: url("/assets/fonts/Brandon_Light_Italic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brandon_Grotesque";
+  src: url("/assets/fonts/Brandon_Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Brandon_Grotesque";
+  src: url("/assets/fonts/Brandon_Light-webfont.woff2") format("woff2"),
+    url("/assets/fonts/Brandon_Light-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Tungsten";
+  src: url("/assets/fonts/Tungsten-Light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Tungsten";
+  src: url("/assets/fonts/Tungsten-Medium.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Basis_Grotesque_Pro";
+  src: url("/assets/fonts/BasisGrotesquePro-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Basis_Grotesque_Pro";
+  src: url("/assets/fonts/BasisGrotesquePro-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Basis_Grotesque_Pro";
+  src: url("/assets/fonts/BasisGrotesquePro-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Basis_Grotesque_Pro";
+  src: url("/assets/fonts/BasisGrotesquePro-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Basis_Grotesque_Pro";
+  src: url("/assets/fonts/BasisGrotesquePro-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}

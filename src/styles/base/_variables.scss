@@ -1,0 +1,41 @@
+$breakpoints: (
+  "sm": "640px",
+  "md": "768px",
+  "lg": "1024px",
+  "xl": "1280px",
+  "2xl": "1536px",
+);
+
+/**
+* Colors
+*/
+$black: #000;
+$white: #fff;
+$gray: #eee;
+$default-primary: #7f8185 !default;
+$color-text: #282828 !default;
+$color-text-light: rgba($color-text, 0.7) !default;
+$color-text-gray: #58595b !default;
+$color-text-lightgray: #939598 !default;
+$color-watermark: #e6e7e8 !default;
+
+/**
+* Cycling colors
+*/
+$cycling-primary: #ff8f1c !default;
+$cycling-tertiary: #cbc8c7 !default;
+$cycling-quaternary: #f3f3f4 !default;
+
+/**
+* Online colors
+*/
+$online-primary: #000 !default;
+$online-tertiary: #555 !default;
+$online-quaternary: #888 !default;
+
+/**
+* Boxing colors
+*/
+$boxing-primary: #5416a2 !default;
+$boxing-tertiary: #584d8b !default;
+$boxing-quaternary: #b7adc8 !default;

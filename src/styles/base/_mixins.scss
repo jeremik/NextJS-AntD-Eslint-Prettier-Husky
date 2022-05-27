@@ -3,3 +3,121 @@
     @content;
   }
 }
+
+@mixin theme($theme-name, $primary-color) {
+  .#{$theme-name} {
+    :global(.ant-layout-header) {
+      background-color: $primary-color;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      :global(.ant-menu) {
+        :global(.ant-menu-submenu) {
+          &:global(.ant-menu-submenu-selected),
+          &:global(.ant-menu-submenu-active),
+          &:hover {
+            background-color: $gray;
+            color: $primary-color;
+
+            > :global(.ant-menu-submenu-title) {
+              color: $primary-color;
+            }
+          }
+
+          > :global(.ant-menu-submenu-title) {
+            color: $white;
+          }
+        }
+
+        :global(.ant-menu-item) {
+          > span {
+            > a,
+            > span {
+              color: $white;
+            }
+          }
+
+          &:global(.ant-menu-item-selected),
+          &:hover {
+            background-color: $gray;
+            color: $primary-color;
+
+            > span {
+              > a,
+              > span {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    :global(.ant-menu-submenu-popup) {
+      width: 100%;
+
+      :global(.ant-menu-sub) {
+        position: absolute;
+        top: -7px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $gray;
+        color: $black;
+
+        :global(.ant-menu-submenu-title):hover {
+          color: $primary-color;
+
+          :global(.ant-menu-submenu-arrow)::before,
+          :global(.ant-menu-submenu-arrow)::after {
+            background: $primary-color;
+          }
+        }
+
+        :global(.ant-menu-submenu-arrow)::before,
+        :global(.ant-menu-submenu-arrow)::after {
+          background: $black;
+        }
+
+        :global(.ant-menu-item) {
+          width: 100%;
+          max-width: 30%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+
+          > span {
+            > a,
+            > span {
+              color: $black;
+            }
+          }
+
+          &:hover {
+            > span {
+              > a,
+              > span {
+                color: $primary-color;
+              }
+            }
+          }
+
+          &:global(.ant-menu-item-selected),
+          &:hover {
+            background-color: $gray;
+            color: $primary-color;
+
+            > span {
+              > span {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

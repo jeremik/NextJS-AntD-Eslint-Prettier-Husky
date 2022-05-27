@@ -1,0 +1,26 @@
+.layout {
+  .content {
+    min-height: 80vh;
+    padding: 24px;
+    background: #fff;
+  }
+
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+    .logo {
+      float: left;
+      width: 120px;
+      height: 31px;
+      margin: 16px 24px 16px 0;
+      background: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+@include theme(default-theme, $default-primary);
+@include theme(cycling-theme, $cycling-primary);
+@include theme(online-theme, $online-primary);
+@include theme(boxing-theme, $boxing-primary);
